@@ -25,38 +25,38 @@ function Card({ title, description, imageUrl }) {
   );
 }
 
-function IconCard({ title, description, imageUrl,index })  {
-  return(
+function IconCard({ title, description, imageUrl, index }) {
+  return (
     <div
-  class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]"
->
-  <svg
-    stroke-linejoin="round"
-    stroke-linecap="round"
-    stroke-width="2"
-    stroke="#000000"
-    fill="none"
-    viewBox="0 0 24 24"
-    class=" h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-    <line y2="21" x2="16" y1="21" x1="8"></line>
-    <line y2="21" x2="12" y1="17" x1="12"></line>
-  </svg>
+      class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]"
+    >
+      <svg
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-width="2"
+        stroke="#000000"
+        fill="none"
+        viewBox="0 0 24 24"
+        class=" h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+        <line y2="21" x2="16" y1="21" x1="8"></line>
+        <line y2="21" x2="12" y1="17" x1="12"></line>
+      </svg>
 
-  <p class="font-bold text-2xl group-hover:text-white text-black/80">
-    {title}
-  </p>
-  <p class="text-gray-400 text-sm">
-    {description}
-  </p>
-  <p
-    class="icon-card-no font-bold self-end"
-  >
-    0{index+1}
-  </p>
-</div>
+      <p class="font-bold text-2xl group-hover:text-white text-black/80">
+        {title}
+      </p>
+      <p class="text-gray-400 text-sm">
+        {description}
+      </p>
+      <p
+        class="icon-card-no font-bold self-end"
+      >
+        0{index + 1}
+      </p>
+    </div>
 
   )
 }
@@ -64,7 +64,7 @@ function IconCard({ title, description, imageUrl,index })  {
 function ServiceCard({ title, description, imageUrl }) {
   return (
     <div className='flex 2xs:flex-row flex-col service-card'>
-       <img src={imageUrl} alt={title} className="service-card-img h-full object-cover" /> 
+      <img src={imageUrl} alt={title} className="service-card-img h-full object-cover" />
       <div className="p-6">
         <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
           {title}
@@ -77,7 +77,7 @@ function ServiceCard({ title, description, imageUrl }) {
   );
 }
 
-const Landing=() =>{
+const Landing = () => {
   const short_description = "Embark on a journey of discovery with Hayya Tours and Travels. From breathtaking landscapes to vibrant cultures, our expertly crafted tours promise unforgettable experiences. Let us guide you to your next adventure!";
 
   const cards = [
@@ -136,7 +136,7 @@ const Landing=() =>{
       title: "Card 3",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.",
       imageUrl: "https://www.homeexchange.com/blog/content/images/2023/09/most-visited-tourist-attraction-world-unviersal-sydney-opera-house.png" // Example image URL
-    },  {
+    }, {
       title: "Card 2",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.",
       imageUrl: "https://wallpapercave.com/wp/I2UB725.jpg" // Example image URL
@@ -172,17 +172,19 @@ const Landing=() =>{
       <div className='w-full page-container'>
         <div className='max-width'>
           <h1 className='section-title' >Exclusive</h1>
-          <div className='grid lg:grid-cols-4 xsm:grid-cols-2 grid-cols-1 gap-10 mt-10'>
-            {tool_cards.map((card, index) => (
-              <div key={index}>
-                <IconCard
-                  title={card.title}
-                  description={card.description}
-                  imageUrl={card.imageUrl}
-                  index={index}
-                />
-              </div>
-            ))}
+          <div className='w-full flex justify-center'>
+            <div className='grid lg:grid-cols-4 xsm:grid-cols-2 grid-cols-1 gap-10 mt-10'>
+              {tool_cards.map((card, index) => (
+                <div key={index}>
+                  <IconCard
+                    title={card.title}
+                    description={card.description}
+                    imageUrl={card.imageUrl}
+                    index={index}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
