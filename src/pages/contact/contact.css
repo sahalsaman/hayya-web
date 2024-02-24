@@ -1,0 +1,25 @@
+.contact-bg{
+    height: 500px;
+    width: 100%;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*xMuIOwjliGUPjkzukeWKfw.jpeg');
+    background-color: black;
+}
+
+
+.contact-card{
+    background-color: #ffffff;
+    padding: 30px ;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    width: 700px;
+  }
+.bg-dark{
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-detail{
+    margin-top: 200px;
+}
