@@ -30,8 +30,8 @@ const Layout = () => {
                     </div>
 
                     {/* Navbar Header */}
-                    <div className="w-full flex justify-center">
-                        <div className="max-width nav-header flex justify-between items-center">
+                    <div className="w-full nav-header flex justify-center">
+                        <div className="max-width  flex justify-between items-center">
                             <Link to="/" className="flex items-center gap-2">
                                 <img className="logo" src={logo} alt="Logo" />
                                 <img className="name" src={name} alt="Name" />
