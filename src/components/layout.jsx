@@ -46,24 +46,24 @@ const Layout = () => {
 
                             {/* Navbar Links */}
                             <div className="hidden sm:flex items-center gap-5">
-                                <Link to="/" className="text-gray-800 hover:text-gray-600">Home</Link>
-                                <Link to="/about" className="text-gray-800 hover:text-gray-600">About</Link>
-                                <Link to="/" className="text-gray-800 hover:text-gray-600">Service</Link>
-                                <Link to="/" className="text-gray-800 hover:text-gray-600">Blog</Link>
-                                <Link to="/contact" className="text-gray-800 hover:text-gray-600">Contact</Link>
+                                <Link to="/" >Home</Link>
+                                <Link to="/about" >About</Link>
+                                <Link to="/" >Service</Link>
+                                <Link to="/" >Blog</Link>
+                                <Link to="/contact" >Contact</Link>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Mobile Menu */}
-                <div className="sm:hidden hidden" id="mobile-menu">
+                <div className="sm:hidden hidden menu-continer" id="mobile-menu">
                     <ul className="px-2 pb-3 space-y-1">
-                        <li><Link to="/" className="text-gray-800 hover:text-gray-600">Home</Link></li>
-                        <li><Link to="/about" className="text-gray-800 hover:text-gray-600">About</Link></li>
-                        <li><Link to="/" className="text-gray-800 hover:text-gray-600">Service</Link></li>
-                        <li><Link to="/" className="text-gray-800 hover:text-gray-600">Blog</Link></li>
-                        <li><Link to="/contact" className="text-gray-800 hover:text-gray-600">Contact</Link></li>
+                        <li className="nav-btn"><Link to="/">Home</Link></li>
+                        <li className="nav-btn"><Link to="/about" >About</Link></li>
+                        <li className="nav-btn"><Link to="/" >Service</Link></li>
+                        <li className="nav-btn"><Link to="/" >Blog</Link></li>
+                        <li className="nav-btn"><Link to="/contact" >Contact</Link></li>
                     </ul>
                 </div>
             </nav>

@@ -24,7 +24,7 @@ const Footer=() =>{
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
               <div>
-                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                   <li class="">
                     <a href="https://flowbite.com/" class="hover:underline">Home</a>
@@ -41,7 +41,7 @@ const Footer=() =>{
                 </ul>
               </div>
               <div>
-                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase">Contact us</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                   <li class="mb-3">
                     <a href="#" class="hover:underline">hello@hayya.com</a>
